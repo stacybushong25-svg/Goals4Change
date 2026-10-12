@@ -1,1 +1,7 @@
-
+{
+  "name": "goals4change",
+  "compatibility_date": "2026-10-06",
+  "assets": {
+    "directory": "."
+  }
+}
