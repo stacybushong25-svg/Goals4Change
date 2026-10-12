@@ -57,8 +57,8 @@ a {
 .nav-shell {
   max-width: var(--max);
   margin: 0 auto;
-  min-height: 82px;
-  padding: 0 28px;
+  min-height: 108px;
+  padding: 8px 28px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -72,8 +72,8 @@ a {
 }
 
 .brand-logo {
-  width: 64px;
-  height: 64px;
+  width: 92px;
+  height: 92px;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -499,6 +499,12 @@ a {
   object-position: center;
 }
 
+/* The childhood photo is landscape. Show the complete photo instead of cropping it. */
+.coach-photo:first-child img {
+  object-fit: contain;
+  background: #eef3f5;
+}
+
 .coach-photo figcaption {
   position: absolute;
   top: 12px;
@@ -733,8 +739,8 @@ a {
   }
 
   .brand-logo {
-    width: 52px;
-    height: 52px;
+    width: 70px;
+    height: 70px;
   }
 
   .coach-photos {
