@@ -57,7 +57,7 @@ a {
 .nav-shell {
   max-width: var(--max);
   margin: 0 auto;
-  min-height: 108px;
+  min-height: 140px;
   padding: 8px 28px;
   display: flex;
   align-items: center;
@@ -72,8 +72,8 @@ a {
 }
 
 .brand-logo {
-  width: 92px;
-  height: 92px;
+  width: 128px;
+  height: 128px;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -482,24 +482,36 @@ a {
 
 .coach-photos {
   display: grid;
-  grid-template-columns: 0.88fr 1.12fr;
+  /* Intentionally unequal: the THEN photo is landscape; the NOW photo is portrait. */
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr);
   gap: 16px;
-  align-items: stretch;
+  align-items: end;
 }
 
 .coach-photo {
   min-width: 0;
-  height: 390px;
+  height: auto;
   margin: 0;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
 }
 
-.coach-photo img {
-  object-position: center;
+.coach-photo:first-child {
+  aspect-ratio: 1822 / 863;
 }
 
-/* The childhood photo is landscape. Show the complete photo instead of cropping it. */
+.coach-photo:last-child {
+  aspect-ratio: 3 / 4;
+}
+
+.coach-photo img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+/* Preserve the full landscape THEN image. Its frame matches the original aspect ratio. */
 .coach-photo:first-child img {
   object-fit: contain;
   background: #eef3f5;
@@ -664,11 +676,9 @@ a {
   }
 
   .coach-photos {
+    width: 100%;
     max-width: 760px;
-  }
-
-  .coach-photo {
-    height: 360px;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr);
   }
 
   .hero-photo,
@@ -739,17 +749,24 @@ a {
   }
 
   .brand-logo {
-    width: 70px;
-    height: 70px;
+    width: 98px;
+    height: 98px;
   }
 
   .coach-photos {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
   }
 
-  .coach-photo {
-    height: 270px;
+  .coach-photo:first-child {
+    width: 100%;
+    aspect-ratio: 1822 / 863;
+  }
+
+  .coach-photo:last-child {
+    width: min(72%, 290px);
+    aspect-ratio: 3 / 4;
+    justify-self: end;
   }
 
   .coach-photo figcaption {
