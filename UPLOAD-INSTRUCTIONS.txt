@@ -16,3 +16,10 @@ Changes included:
 - Donation QR code added to the cause section.
 - Clinic registration buttons use REGISTER FOR A CLINIC and the main event button is more prominent.
 - Registration page includes a DONATE button.
+
+
+LATEST DESIGN REFINEMENTS
+- The desktop header logo is smaller.
+- The Our Cause section has one DONATE button and a separate LEARN ABOUT CASA JARDIN button.
+- QR-code scanning instructions and the on-page QR panel have been removed. Keep the QR image in the repository for printed materials if needed.
+- The redundant READY TO PLAY WITH PURPOSE section has been removed.

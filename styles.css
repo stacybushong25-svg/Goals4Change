@@ -815,10 +815,11 @@ a {
 .coach-signoff { margin-top: 1.25rem; color: var(--navy, #0b2e4f); }
 
 
-/* Goals4Change update: donation, partner logo, QR code, and clearer registration CTA */
+/* Goals4Change refinements: compact header logo and clear cause actions */
 .brand-logo {
-  width: 250px;
+  width: 160px;
   height: auto;
+  max-height: 100px;
   object-fit: contain;
 }
 
@@ -849,12 +850,6 @@ a {
   box-shadow: 0 10px 22px rgba(13, 36, 56, 0.16);
 }
 
-.cause-inline-link {
-  color: var(--blue);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .inh-logo-link {
   display: block;
   max-width: 430px;
@@ -871,52 +866,7 @@ a {
   object-fit: contain;
 }
 
-.donation-qr-panel {
-  display: grid;
-  grid-template-columns: 1fr 150px;
-  gap: 24px;
-  align-items: center;
-  margin-top: 28px;
-  padding: 24px;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-}
-
-.donation-qr-panel h3 {
-  margin: 0 0 8px;
-  color: var(--navy);
-  font-family: "Oswald", Impact, sans-serif;
-  font-size: 25px;
-}
-
-.donation-qr-panel p {
-  margin: 0 0 18px;
-  color: var(--muted);
-}
-
-.donation-qr {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 6px;
-}
-
-.donation-qr-link {
-  display: block;
-  padding: 6px;
-  background: #fff;
-  border-radius: 8px;
-}
-
 @media (max-width: 760px) {
-  .brand-logo { width: 190px; }
+  .brand-logo { width: 112px; max-height: 76px; }
   .event-action { padding: 28px; }
-  .donation-qr-panel {
-    grid-template-columns: 1fr;
-  }
-  .donation-qr-link {
-    width: 160px;
-  }
 }
