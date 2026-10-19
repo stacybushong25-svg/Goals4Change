@@ -1,0 +1,18 @@
+GOALS4CHANGE WEBSITE UPDATE
+
+This ZIP contains the updated website files and image assets.
+
+To publish:
+1. Open the Goals4Change GitHub repository.
+2. Upload the contents of this folder, not the enclosing folder itself.
+3. Keep the existing folder structure, especially the images folder.
+4. Commit the changes. Cloudflare should deploy from GitHub automatically.
+
+Changes included:
+- Donation buttons consistently say DONATE and link to Givebutter.
+- The Our Cause section links La Casa del Jardin to the official Casa Jardin page.
+- Later references use Casa Jardin.
+- International Network of Hearts logo added near the cause section.
+- Donation QR code added to the cause section.
+- Clinic registration buttons use REGISTER FOR A CLINIC and the main event button is more prominent.
+- Registration page includes a DONATE button.
