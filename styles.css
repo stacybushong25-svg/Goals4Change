@@ -817,9 +817,9 @@ a {
 
 /* Goals4Change refinements: larger desktop logo and clear cause actions */
 .brand-logo {
-  width: 240px;
+  width: 346px;
   height: auto;
-  max-height: 150px;
+  max-height: 216px;
   object-fit: contain;
 }
 
@@ -867,6 +867,6 @@ a {
 }
 
 @media (max-width: 760px) {
-  .brand-logo { width: 112px; max-height: 76px; }
+  .brand-logo { width: 252px; max-height: 171px; }
   .event-action { padding: 28px; }
 }
