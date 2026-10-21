@@ -815,11 +815,11 @@ a {
 .coach-signoff { margin-top: 1.25rem; color: var(--navy, #0b2e4f); }
 
 
-/* Goals4Change refinements: compact header logo and clear cause actions */
+/* Goals4Change refinements: larger desktop logo and clear cause actions */
 .brand-logo {
-  width: 160px;
+  width: 240px;
   height: auto;
-  max-height: 100px;
+  max-height: 150px;
   object-fit: contain;
 }
 
